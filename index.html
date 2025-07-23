@@ -10,6 +10,12 @@
 </head>
 
 <body>
+
+<audio id="bg-music" autoplay loop>
+    <source src="Enigma.mp3" type="audio/mpeg">
+    <button onclick="document.getElementById('bg-music').play()">🎵 Включить музыку</button>
+  </audio>
+  
   <div class="book">
     <div class="cover">
       <img src="logo.webp" class="logo" alt="">
@@ -51,6 +57,13 @@
 
     </div>
   </div>
+
+  <script>
+    window.addEventListener("beforeunload", function () {
+        document.getElementById("bg-music").pause();
+      });
+  </script>
+  
 </body>
 
 </html>
