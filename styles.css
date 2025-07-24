@@ -231,3 +231,52 @@ padding-top: 0.5rem;
 }
 }
 
+@media screen and (max-width: 468px) {
+body {
+  margin-top: 1rem;
+  overflow-x: hidden;
+}
+
+.book {
+  position: relative;
+  width: 400px;
+  height: 710px;
+  border-radius: 10px;
+  background-image: url(cover.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 12px #000;
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+ 
+
+}
+.storis p {
+  font-size: 0.92rem;
+  text-align: justify;
+  color: #000000;
+  padding-bottom: 0.75rem;
+  
+}
+
+.storis {
+border-top: 1px solid black;
+padding-top: 0.5rem;
+}
+
+  .socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+   font-size:  2rem;
+   margin-bottom: -80px;
+}
+}
+
