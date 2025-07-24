@@ -194,5 +194,45 @@ body {
 
 }
 
+@media screen and (max-width: 600px) {
+.book {
+  position: relative;
+  width: 400px;
+  height: 750px;
+  border-radius: 10px;
+  /* background-color: lightcyan; */
+  background-image: url(cover.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 20px #000;
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  /* overflow-x: hidden; */
 
+}
+
+.book:hover .cover {
+  transition: all 0.9s;
+  transform: rotatey(-83deg);
+}
+
+
+
+.content .storis p {
+  font-size: 90%;
+  text-align: justify;
+  color: #000000;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  
+
+}
+  
+}
 
