@@ -21,7 +21,8 @@ body {
   display: grid;
   place-items: center;
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .logo {
@@ -29,8 +30,9 @@ body {
   display: block;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 30%;
   margin-top: -35rem;
+  max-width: 180px;
 }
 
 .cover > h1 {
@@ -159,8 +161,9 @@ margin-top: 8.5rem;
 
 .book {
   position: relative;
-  width: 600px;
-  height: 810px;
+  width: 95vw;
+  max-width: 600px;
+  height: auto;
   border-radius: 10px;
   /* background-color: lightcyan; */
   background-image: url(cover.webp);
@@ -233,16 +236,16 @@ padding-top: 0.5rem;
 
 @media screen and (max-width: 468px) {
 body {
-   max-width: 100%;
+  max-width: 100%;
   max-height: 100vh;
-  margin-top: 0.75rem;
-  overflow: hidden;
+  margin-top: 1.3rem;
+  overflow-x: hidden;
 }
 
 .book {
   position: relative;
-  width: 400px;
-  height: 710px;
+   width: 95vw;
+    height: 80vh;
   border-radius: 10px;
   background-image: url(cover.webp);
   background-position: center;
@@ -272,7 +275,7 @@ border-top: 1px solid black;
 padding-top: 0.5rem;
 }
 
-  .socials {
+.socials {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
