@@ -16,7 +16,7 @@ body {
   max-height: 80vh;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
-  margin-top: 2rem;
+  margin-top: 0.75rem;
   background-color: rgb(70, 80, 90);
   display: grid;
   place-items: center;
