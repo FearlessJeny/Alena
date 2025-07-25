@@ -39,8 +39,8 @@ body {
 
 .book {
   position: relative;
-  width: 260px;
-  height: 350px;
+   width: 350px;
+  height: 650px;
   border-radius: 10px;
   background-color: #effffe;
   box-shadow: 1px 1px 12px #000;
