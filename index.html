@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AleNails_book</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
-
 <body>
-  <audio id="bg-music" autoplay loop>
-    <source src="Enigma.mp3" type="audio/mpeg">
-  </audio>
-  <div class="book">
 
-    <div class="cover">
+    <div class="divi">
+    
+<section class="book">
 
-      <img src="logo.webp" class="logo" alt="">
-      <h1>AleNails</h1>
+    <header class="header">
 
-      <img src="13.webp" class="glvnay"
-        alt="Маникюр и педикюр в Ашкелоне. Ногти, руки, ноги | Manicure & pedicure in Ashkelon – nails, hands, feet | מניקור ופדיקור באשקלון – ציפורניים, ידיים, רגליים">
+        <img src="logo.webp" alt="" class="logo">
+        <h1>AleNails</h1>
 
+    </header>
 
+    <picture class="pic">
+        <source srcset="13.webp" type="image/webp">
+        <img src="13.webp" alt="">
+    </picture>
 
-      <p>
-        <span class="rainbow-text">Добро пожаловать</span>
-        <br><span class="rainbow-text1">В мир красоты и заботы о ногтях!</span>
-      </p>
-      <!-- <p>Алёна</p> -->
-      <!-- <h2>Мастер <br><span>Ногтевого</span><br><span>Сервиса</span></h2> -->
+    <div class="parag">
+
+        <h2>
+            <span class="rainbow-text">Добро пожаловать</span> <br>
+            <span class="rainbow-text1 right">В мир красоты и</span>
+            <span class="rainbow-text1 left"> заботы о ногтях!</span>
+        </h2>
+
     </div>
 
-    <!-- Page 2 -->
+</section>
 
-    <div class="content">
-      <!-- <i id="play-btn" class="fa-solid fa-music"></i> -->
-      <div class="storis">
-        <p> Меня зовут <span><b>Алёна</b></span>, и я рада предложить вам процедуры маникюра и педикюра, которые подарят
-          вам не только ухоженные
-          ногти, но и неповторимый стиль. 
-          <p>Моя история началась много лет назад, по-этому на протяжении <b>15-ти лет</b> я с большим
-          интузиазмом и желанием занимаюсь маникюром и педикюром.</p> 
-          <p>Продолжаю учиться, набераться опыта, вносить новые техники
-          в работы, для того, чтобы клиент чувствовал мою увереность и смог полностью доверится моим рукам!</p> 
-          <p>По-этому для
-          меня каждый клиент- это новая история, новые идеи, и я готова воплотить в жизнь ваше видение красоты.</p> 
-         <p> Мы вместе найдём дизайн, который будет идеально подходить именно вам.</p> 
-         <p> Мой уютный уголок- это не только место для процедуры, но и атмосфера заботы и релакса.</p> 
-         <p> <b> Я приглашаю вас окунуться в мир ухода и красоты, где вы сможете насладиться каждой минутой процедуры.</b></p>
-        </p>
-      </div>
+<section class="content">
 
+    <div class="col">
 
+    <div class="storis">
 
-      <div class="socials">
+        <p> Меня зовут <b>Алёна</b>, и я рада предложить вам процедуры маникюра и педикюра, которые подарят
+            вам не только ухоженные
+            ногти, но и неповторимый стиль.</p>
+        <p>Моя история началась много лет назад, по-этому на протяжении <b>15-ти лет</b> я с большим
+            интузиазмом и желанием занимаюсь маникюром и педикюром.</p>
+        <p>Продолжаю учиться, набераться опыта, вносить новые техники
+            в работы, для того, чтобы клиент чувствовал мою увереность и смог полностью доверится моим рукам!</p>
+        <p>По-этому для
+            меня каждый клиент- это новая история, новые идеи, и я готова воплотить в жизнь ваше видение красоты.</p>
+        <p> Мы вместе найдём дизайн, который будет идеально подходить именно вам.</p>
+        <p> Мой уютный уголок- это не только место для процедуры, но и атмосфера заботы и релакса.</p>
+        <p> <strong>  Я приглашаю вас окунуться в мир ухода и красоты, где вы сможете насладиться каждой минутой процедуры. </strong></p>
+        
 
+    </div>
+    
+
+    <div class="socials">
+    
         <a href=""><i class="fab fa-whatsapp"></i></a>
-
+    
         <a href=""><i class="fa-brands fa-facebook-f "></i></a>
         <a href=""><i class="fa-brands fa-instagram"></i></a>
         <a href="https://waze.com/ul/hsv8s4vcfe" target="_blank"><i class="fab fa-waze"></i></a>
-      </div>
-
     </div>
-  </div>
 
-  <script>
-    const music = document.getElementById("bg-music");
-    const btn = document.getElementById("play-btn");
+</div>
 
-    btn.addEventListener("click", () => {
-      music.play();
-      music.volume = 0.3;
-    });
+</section>
 
-    window.addEventListener("beforeunload", function () {
-      document.getElementById("bg-music").pause();
-    });
-  </script>
+</div>
+
 </body>
-
 </html>
