@@ -1,405 +1,73 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background: lightblue;
-
-	overflow-x: hidden;
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	width: 100vw;
-	height: 100vh;
-	margin-top: -2rem;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #212121;
+  display: grid;
+  place-items: center;
+  color: white;
 }
 
-.divi {
-	position: relative;
-
-	width: 25rem;
-	height: 50rem;
-
-
-	border-radius: 10px;
-	box-shadow: 1px 1px 20px #000;
-
-	transform: preserve-3d;
-	perspective: 2000px;
-
-	display: block;
-	justify-content: center;
-	align-items: center;
-
-	margin: 3rem auto;
-
-	color: #000;
-	text-align: center;
-
-	/* overflow: hidden; */
+.cover {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(cover.webp);
+  background-size: cover;
+  transform-origin: 0;
+  box-shadow: 1px 1px 12px #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s;
+  cursor: pointer;
 }
-
- .divi {
-      width: 100%;
-      max-width: 390px;
-      background: rgb(210, 226, 243);
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      /* overflow: hidden; */
-    }
 
 .book {
-
-	position: absolute;
-	width: 25rem;
-	height: 50rem;
-	/* height: auto; */
-
-	border-radius: 0.75rem;
-
-	background: linear-gradient(to bottom, rgba(180, 120, 200), rgba(14, 1, 19));
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-	box-shadow: 1px 1px 12px #000;
-
-	transform-origin: 0;
-
-	padding: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-text-align: center;
-	transition: all 0.5s;
-    z-index: 100;
+  position: relative;
+  width: 260px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #effffe;
+  box-shadow: 1px 1px 12px #000;
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
 }
 
-
-
-.divi:hover .book {
-	transition: all 0.9s;
-	transform: rotatey(-83.5deg);
+.book:hover .cover {
+  transition: all 0.5s;
+  transform: rotatey(-80deg);
 }
 
-.header {
-	/* position: absolute; */
-
-	/* border: 5px solid green; */
-	width: 100%;
-	/* height: 180px; */
-	/* height: auto; */
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	/* margin-top: -38rem; */
-	/* margin-bottom: 23rem; */
-	/* padding-bottom: 12rem; */
+.cover > p {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.cover > h2 > span {
+  color: #1076c9;
+  font-size: 28px;
+  font-weight: bolder;
 }
 
-.logo {
-	width: 9rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.header h1 {
-	display: flex;
-	text-transform: uppercase;
-	font-size: 2.2rem;
-	letter-spacing: 1rem;
-	color: rgb(60, 30, 34);
-}
-
-.pic img {
-	width: 60%;
-
-	object-fit: cover;
-
-	/* display: flex; */
-	/* justify-content: center; */
-	/* align-items: center; */
-
-	/* border-radius: 35% 35% 15% 15%; */
-	border-radius: 50%;
-	box-shadow: 0 0 30px violet;
-	animation: blink 1.2s infinite ease-in-out;
-	margin-top: 3rem;
-}
-@keyframes blink {
-	0% {
-		box-shadow: 0 0 5px violet;
-	}
-	50% {
-		box-shadow: 0 0 20px violet;
-	}
-	100% {
-		box-shadow: 0 0 5px violet;
-	}
-}
-
-.parag {
-	/* border: 1px solid red; */
-
-	display: block;
-	align-items: center;
-	justify-content: center;
-
-	/* padding-top: 2rem; */
-	margin-top: 3rem;
-}
-
-.parag h2 {
-	font-size: 1.5rem;
-	letter-spacing: 0.1rem;
-}
-
-.rainbow-text {
-	display: inline-block;
-	margin-bottom: 2.75rem;
-	font-size: 2rem;
-	font-weight: 500;
-
-	/* font-weight: bold; */
-	background: linear-gradient(
-		270deg,
-		blue,
-		green,
-		orange,
-		yellow,
-		blue,
-		green,
-		orange,
-		yellow,
-		blue,
-		green,
-		orange,
-		yellow
-	);
-	background-size: 400% 400%;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: rainbowMove 9s linear infinite;
-}
-
-.rainbow-text1 {
-	display: inline-block;
-	margin-bottom: 1rem;
-	font-size: 2rem;
-	/* font-weight: bold; */
-	background: linear-gradient(
-		-270deg,
-		blue,
-		green,
-		orange,
-		yellow,
-		blue,
-		green,
-		orange,
-		yellow,
-		blue,
-		green,
-		orange,
-		yellow
-	);
-	background-size: 400% 400%;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: rainbowMove1 5s linear infinite;
-}
-
-.right {
-	margin-right: 70px;
-}
-
-.left {
-	margin-left: 90px;
-}
-
-@keyframes rainbowMove1 {
-	0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 100% 50%;
-	}
-}
-@keyframes rainbowMove {
-	100% {
-		background-position: 0% 50%;
-	}
-	0% {
-		background-position: 100% 50%;
-	}
-}
-
-/* .content {
-    position: fixed; */
-   
-	/* width: 25rem; */
-	/* height: 100vh; */
-
-	/* padding: 0 2rem; */
-
-    /* width: 100%;
-    max-width: 25rem;
-    height: 85vh;
-    padding: 0rem 1rem;
-    margin: 0 auto;
-    overflow: hidden;
-    z-index: -100;
-} */
-
-.content {
-      padding: 1rem;
-    }
-.storis p {
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      text-align: justify;
-    }
-
-
-
-
-.storis {
-	width: 100%;
-	height: auto;
-
-    display: block;
-
-    margin-bottom: 3.5rem;
-}
-
-
-/* .storis p {
-	
-	font-size: 1.2rem;
-    text-align: justify;
-    font-weight: medium;
-    margin-top: 1rem;
-} */
-
-.socials {
-    /* border: 1px solid green; */
-
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-
-	/* margin: 9rem; */
-	/* margin-top: 25rem; */
-}
-
-.socials a i {
-	display: inline-block;
-	/* padding-left: 4rem; */
-	font-size: 2rem;
-    animation: jumpUp 1.5s ease-in-out infinite;
-	/* margin-bottom: 2rem; */
-}
-
-.fa-whatsapp {
-	color: green;
-}
-.fa-facebook-f {
-	color: blue;
-}
-.fa-instagram {
-	color: violet;
-}
-.fa-waze {
-	color: black;
-}
-
-.socials a:nth-child(1) i {
-  animation-delay: 0.3s;
-  color: green;
-}
-.socials a:nth-child(2) i {
-  animation-delay: 0s;
-  color: blue;
-}
-.socials a:nth-child(3) i {
-  animation-delay: 0.3s;
-  color: violet;
-}
-.socials a:nth-child(4) i {
-  animation-delay: 0s;
-  color: black;
-}
-@keyframes jumpUp {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  body {
-    width: 95%;
-    padding: 0 10px; /* немного отступов от краёв */
-    margin: 0 10px;
-    margin-top: 10px;
-  }
-
-  .divi {
-    width: 100%;
-    max-height: 90%;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-  }
-
-  .storis p {
-    font-size: 110%;  
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  body {
-    width: 95%;
-    height: 80%;
-    padding: 0 1px; /* немного отступов от краёв */
-    margin-top: 10px;
-  }
-
-  .divi {
-    width: 100%;
-    max-height: 90%;
-    margin-right: 2rem;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
-  }
-
-.book {
-max-height: 100%;
-margin-left: 1rem;
-}
-.logo {
-    width: 5rem;
-}
-.header h1 {
-    font-size: 1.5rem;
-}
-
-.pic img {
-	width: 45%;
-
-  .storis p {
-    font-size: 95%;  
-  }
-}
+.content > p {
+  margin-bottom: 10px;
 }
