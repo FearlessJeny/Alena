@@ -345,10 +345,10 @@ text-align: center;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   body {
     width: 95%;
-    padding: 0 1px; /* немного отступов от краёв */
+    padding: 0 10px; /* немного отступов от краёв */
     margin: 0 10px;
     margin-top: 10px;
   }
@@ -364,4 +364,42 @@ text-align: center;
   .storis p {
     font-size: 110%;  
   }
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 95%;
+    height: 80%;
+    padding: 0 1px; /* немного отступов от краёв */
+    margin-top: 10px;
+  }
+
+  .divi {
+    width: 100%;
+    max-height: 90%;
+    margin-right: 2rem;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+
+.book {
+max-height: 100%;
+margin-left: 1rem;
+}
+.logo {
+    width: 5rem;
+}
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.pic img {
+	width: 45%;
+
+  .storis p {
+    font-size: 95%;  
+  }
+}
 }
