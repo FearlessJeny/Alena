@@ -147,17 +147,25 @@ body {
 }
 
 .parag {
+  display: flex;
+  flex-direction: column;
   font-size: 0.85rem;
   line-height: 1.4;
   color: #000000;
   text-align: justify;
   padding: 0 12px;
-  margin-top: px;
 }
 
 .parag p {
+   flex: 1 1 auto;
   margin: 0;
+  /* font-weight: 700; */
+
+   margin-bottom: 12px;
   font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .socials {
