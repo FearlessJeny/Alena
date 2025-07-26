@@ -62,8 +62,8 @@
 
       <div class="socials">
 
-        <a href="https://wa.me/9720542330553"><i class="fab fa-whatsapp" target="_blank"></i></a>
-        <a href="https://www.facebook.com/a.AleNails"><i class="fa-brands fa-facebook-f " target="_blank"></i></a>
+        <a href="https://wa.me/9720542330553" target="_blank"><i class="fab fa-whatsapp" ></i></a>
+        <a href="https://www.facebook.com/a.AleNails" target="_blank"><i class="fa-brands fa-facebook-f " ></i></a>
         <a href="https://www.instagram.com/elenachvankin?igsh=N2ltN2NtODIyZnM0" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://maps.app.goo.gl/KbifaKUdSHRFTa9P8" target="_blank"><i class="fab fa-waze"></i></a>
         <!-- <a href="https://waze.com/ul/hsv8s4vcfe" target="_blank"><i class="fab fa-waze"></i></a> -->
@@ -74,6 +74,22 @@
 
   </div>
   </div>
+
+<script>
+  const music = document.getElementById("bg-music");
+  
+ music.volume = 0.3;
+  
+  btn.addEventListener("click", () => {
+    music.play();
+   
+  });
+
+  window.addEventListener("beforeunload", function () {
+    document.getElementById("bg-music").pause();
+  });
+</script>
+  
 </body>
 
 </html>
