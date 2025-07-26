@@ -36,6 +36,8 @@ body {
   gap: 5rem;
   transition: all 0.5s;
   cursor: pointer;
+  z-index: 100;
+
 }
 
 .logo {
@@ -66,7 +68,7 @@ body {
   width: 350px;
   height: 650px;
   border-radius: 10px;
-  background-color: #effffe;
+  background-color: #d3eeec;
   box-shadow: 1px 1px 12px #000;
   transform: preserve-3d;
   perspective: 2000px;
@@ -75,7 +77,6 @@ body {
   justify-content: center;
   color: #000;
   text-align: center;
-  
 }
 
 .book:hover .cover {
@@ -136,8 +137,76 @@ body {
 	margin-left: 90px;
 }
 
+.content {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
 
+.parag {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #000000;
+  text-align: justify;
+  padding: 0 12px;
+  margin-top: px;
+}
 
-.content > p {
-  margin-bottom: 10px;
+.parag p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.socials {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .socials a i {
+    font-size: 24px;
+    animation: jumpUp 1.5s ease-in-out infinite;
+  }
+
+  .fa-whatsapp {
+	color: green;
+}
+.fa-facebook-f {
+	color: blue;
+}
+.fa-instagram {
+	color: violet;
+}
+.fa-waze {
+	color: black;
+}
+
+.socials a:nth-child(1) i {
+  animation-delay: 0.3s;
+  color: green;
+}
+.socials a:nth-child(2) i {
+  animation-delay: 0s;
+  color: blue;
+}
+.socials a:nth-child(3) i {
+  animation-delay: 0.3s;
+  color: violet;
+}
+.socials a:nth-child(4) i {
+  animation-delay: 0s;
+  color: black;
+}
+@keyframes jumpUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
