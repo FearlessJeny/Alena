@@ -65,10 +65,8 @@ body {
 
 .book {
   position: relative;
-  width: 75vw;
-  height: 70vh;
-/*   width: 350px;
-  height: 650px; */
+  width: 350px;
+  height: 650px;
   border-radius: 10px;
   background-color: #d3eeec;
   box-shadow: 1px 1px 12px #000;
@@ -141,7 +139,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 550px;
+  max-width: 350px;
   height: auto;
   margin: 0 auto;
   padding: 15px;
@@ -151,7 +149,7 @@ body {
 .parag {
   display: flex;
   flex-direction: column;
-  font-size: 2.85rem;
+  font-size: 0.85rem;
   line-height: 1.4;
   color: #000000;
   text-align: justify;
@@ -159,7 +157,7 @@ body {
 }
 
 .parag p {
-   flex: 1 1 20rem;
+   flex: 1 1 auto;
   margin: 0;
   /* font-weight: 700; */
 
@@ -174,7 +172,7 @@ body {
 @media screen and (max-width: 600px) {
 
   .book {
-    width: 100%;
+    width: 90%;
     height: 85%;
   }
 
