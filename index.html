@@ -20,6 +20,11 @@
 </head>
 
 <body>
+
+ <audio id="bg-music" autoplay muted loop>
+  <source src="Enigma.mp3" type="audio/mpeg">
+</audio> 
+  
   <div class="book">
     <div class="cover">
       <img src="logo.webp" class="logo" alt="Маникюр и педикюр в Ашкелоне. Ногти, руки, ноги | Manicure & pedicure in Ashkelon – nails, hands, feet | מניקור ופדיקור באשקלון – ציפורניים, ידיים, רגליים">
@@ -77,16 +82,21 @@
 
 <script>
   const music = document.getElementById("bg-music");
-  
- music.volume = 0.3;
-  
-  btn.addEventListener("click", () => {
-    music.play();
-   
+  music.volume = 0.3;
+
+  // Снимаем mute после загрузки
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      music.muted = false;
+      music.play().catch(() => {
+        console.warn("Автовоспроизведение заблокировано.");
+      });
+    }, 1000);
   });
 
   window.addEventListener("beforeunload", function () {
-    document.getElementById("bg-music").pause();
+    music.pause();
+    music.currentTime = 0;
   });
 </script>
   
