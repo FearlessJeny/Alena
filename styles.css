@@ -185,7 +185,10 @@ body {
     padding: 10px;
     flex-direction: column;
   }
-
+	
+.content .socials a i {
+    font-size: 2rem;
+  }
 
 }
 
