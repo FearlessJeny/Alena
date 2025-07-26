@@ -5,7 +5,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
- margin: -10px;
+  margin: -10px;
   padding: 0;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .cover {
-/*   top: 0; */
+  /* top: 0; */
   position: absolute;
   width: 100%;
   height: 100%;
@@ -32,14 +32,38 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  gap: 5rem;
   transition: all 0.5s;
   cursor: pointer;
 }
 
+.logo {
+  width: 6rem;
+}
+
+.web {
+  width: 10rem;
+  border-radius: 50%;
+  box-shadow: 0 0 10 violet;
+  animation: blink 1.2s infinite ease-in-out;
+}
+@keyframes blink {
+  0% {
+    box-shadow: 0 0 5px violet;
+  }
+  50% {
+    box-shadow: 0 0 20px violet;
+  }
+  100% {
+    box-shadow: 0 0 5px violet;
+  }
+}
+
+
 .book {
   position: relative;
-   width: 350px;
+  width: 350px;
   height: 650px;
   border-radius: 10px;
   background-color: #effffe;
@@ -51,23 +75,68 @@ body {
   justify-content: center;
   color: #000;
   text-align: center;
+  
 }
 
 .book:hover .cover {
   transition: all 0.5s;
-  transform: rotatey(-80deg);
+  transform: rotatey(-84deg);
 }
 
-.cover > p {
+.cover > h1 {
   text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 25px;
+  letter-spacing: 1rem;
 }
 .cover > h2 > span {
-  color: #1076c9;
-  font-size: 28px;
-  font-weight: bolder;
+  display: flex;
 }
+
+.rainbow-text {
+  font-size: 1.3rem;
+  background: linear-gradient(270deg, blue, green, orange, yellow, blue, green, orange, yellow, blue, green, orange, yellow );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowMove 9s linear infinite;
+}
+.rainbow-text1 {
+  display: inline-block;
+  font-size: 1.3rem;
+  background: linear-gradient(-270deg, blue, green, orange, yellow, blue, green, orange, yellow, blue, green, orange, yellow );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowMove1 5s linear infinite;
+}
+@keyframes rainbowMove1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes rainbowMove {
+  100% {
+    background-position: 0% 50%;
+  }
+  0% {
+    background-position: 100% 50%;
+  }
+}
+.right {
+	margin-right: 70px;
+}
+.center {
+  margin-left: 40px;
+}
+
+.left {
+	margin-left: 90px;
+}
+
+
 
 .content > p {
   margin-bottom: 10px;
