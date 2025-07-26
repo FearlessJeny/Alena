@@ -168,6 +168,18 @@ body {
   text-align: justify;
 }
 
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  .content {
+    padding: 10px;
+    flex-direction: column;
+  }
+}
+
+
 .socials {
     margin-top: 55px;
     display: flex;
