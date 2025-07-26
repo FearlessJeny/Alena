@@ -149,11 +149,11 @@ body {
 .parag {
   display: flex;
   flex-direction: column;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   line-height: 1.4;
   color: #000000;
   text-align: justify;
-  padding: 0 12px;
+  padding: 0 10px;
 }
 
 .parag p {
