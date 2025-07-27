@@ -5,8 +5,9 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  margin: -10px;
+  margin: -12px;
   padding: 0;
+	overflow: hidden;
 }
 
 body {
@@ -37,8 +38,6 @@ body {
   transition: all 0.5s;
   cursor: pointer;
   z-index: 100;
-	overflow: hidden;
-
 }
 
 .logo {
@@ -79,6 +78,7 @@ body {
   color: #000;
   text-align: center;
   overflow: hidden;
+	box-sizing: border-box;
 }
 
 .book:hover .cover {
