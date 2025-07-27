@@ -85,7 +85,7 @@ body {
   justify-content: center;
   color: #000;
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
 	box-sizing: border-box;
 }
 
