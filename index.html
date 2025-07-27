@@ -85,14 +85,14 @@
   music.volume = 0.05;
 
   // Снимаем mute после загрузки
-  // window.addEventListener("DOMContentLoaded", () => {
-  //   setTimeout(() => {
-  //     music.muted = false;
-  //     music.play().catch(() => {
-  //       console.warn("Автовоспроизведение заблокировано.");
-  //     });
-  //   }, 10);
-  // });
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      music.muted = false;
+      music.play().catch(() => {
+        console.warn("Автовоспроизведение заблокировано.");
+      });
+    }, 100);
+  });
 
   window.addEventListener("beforeunload", function () {
     music.pause();
