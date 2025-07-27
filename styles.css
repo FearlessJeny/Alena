@@ -24,6 +24,7 @@ body {
   display: grid;
   place-items: center;
   color: white;
+	margin-top: -2rem;
 }
 
 .cover {
