@@ -106,7 +106,7 @@ body {
 
 .rainbow-text {
   font-size: 1.3rem;
-  background: linear-gradient(270deg, blue, green, orange, yellow, blue, green, orange, yellow, blue, green, orange, yellow );
+  color:  blue;
   background-size: 400% 400%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -226,23 +226,31 @@ body {
 	color: blue;
 }
 .fa-instagram {
-	color: violet;
+	color: rgb(250, 1, 146);
+}
+
+.rainbow-icon {
+	color: rgb(26, 64, 95);
 }
 .fa-waze {
 	color: black;
 }
 
 .socials a:nth-child(1) i {
-  animation-delay: 0.3s;
+  animation-delay: 0s;
   color: green;
 }
 .socials a:nth-child(2) i {
-  animation-delay: 0s;
+  animation-delay: 0.3s;
   color: blue;
 }
 .socials a:nth-child(3) i {
-  animation-delay: 0.3s;
-  color: violet;
+  animation-delay: 0.1s;
+  color: rgb(250, 1, 146);
+}
+.socials a:nth-child(4) i {
+	animation-delay: 0.3s;
+	color: rgb(26, 64, 95);
 }
 .socials a:nth-child(4) i {
   animation-delay: 0s;
