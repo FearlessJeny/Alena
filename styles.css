@@ -98,13 +98,13 @@ body {
   text-transform: uppercase;
   font-size: 25px;
   letter-spacing: 1rem;
-	color: #fff;
+	color: blue;
 }
 .cover > h2 > span {
   display: flex;
 }
 
-.rainbow-text {
+/* .rainbow-text {
   font-size: 1.3rem;
   color:  blue;
   background-size: 400% 400%;
@@ -120,7 +120,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbowMove1 5s linear infinite;
-}
+} */
 @keyframes rainbowMove1 {
   0% {
     background-position: 0% 50%;
