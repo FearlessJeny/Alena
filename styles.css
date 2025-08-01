@@ -98,10 +98,11 @@ body {
   text-transform: uppercase;
   font-size: 25px;
   letter-spacing: 1rem;
-	color: blue;
+	color: #fff;
 }
 .cover > h2 > span {
   display: flex;
+	color: lightskyblue;
 }
 
 /* .rainbow-text {
